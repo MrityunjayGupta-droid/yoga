@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HeaderTop from "./molecules/HeaderTop/HeaderTop";
+import Home from "./pages";
+import "./App.css";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <div className="main-page">
+        <div
+          style={{
+            borderRight: "1px solid #12100E",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <div
+            style={{
+              color: "#12100E",
+              transform: "matrix(0, -1, 1, 0, 0, 0)",
+              fontSize: "28px",
+              position: "fixed",
+              top: "158px",
+              left: "10px",
+              fontFamily: "Mriya Grotesk",
+            }}
+          >
+            MENU
+          </div>
+          <div
+            style={{
+              color: "#12100E",
+              transform: "matrix(0, -1, 1, 0, 0, 0)",
+              fontSize: "28px",
+              position: "fixed",
+              top: "550px",
+              left: "-30px",
+              fontFamily: "Mriya Grotesk",
+            }}
+          >
+            CONTACT US
+          </div>
+        </div>
+        <div>
+          <HeaderTop />
+          <Home />
+        </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;

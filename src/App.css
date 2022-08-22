@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -13,8 +13,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App-header {  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +34,74 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+ 
+.main-page {
+  display: grid;
+  border: 1px solid #F5F5F5;
+  grid-template-columns: 103px 1fr;
+  background-color: #F5F5F5;
+}
+.main-page-white {
+  display: grid;
+  border: 1px solid #F5F5F5;
+  grid-template-columns: 103px 1fr;  
+}
+
+.video-section {
+  display: grid;
+   grid-template-columns:1.2fr 1fr 1.2fr;
+   grid-gap: 21px;
+}
+
+.nav-link {  
+    margin-top: 40px;
+    border-top: 1px solid #999999;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    position: sticky;
+    background-color: #F5F5F5;
+    top:-.5px;
+    height: 62px;
+    z-index: 99;
+    /* justifyContent: "center", */  
+}
+
+.intro-section {
+   display: grid;
+   grid-template-columns:1fr 1fr;
+   grid-gap: 100px;
+   background-color: #FFF;
+}
+
+.sticky-align { 
+  position: sticky;
+  height: 1050px;
+  top:70px;  
+}
+.cirriculum-section {
+    display: grid;
+   grid-template-columns:1fr 1fr;
+   grid-column-gap: 150px;
+   padding: 60px 102px;
+}
+
+.accordion-item{
+  margin-top: 30px;
+}
+
+.schedule-section {
+  background: #ffffff;
+  padding-top: 50px;
+  padding: 10px 102px;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr 2.7fr;
+  grid-column-gap: 100px;  
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
